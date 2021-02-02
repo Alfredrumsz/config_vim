@@ -11,17 +11,19 @@ nmap <Leader>< :wq<CR>
 nmap <Leader>f <c-w>gf<CR>
 
 "configuracion YCM
-nnoremap <Leader>ji :tab split \| YcmCompleter GoToImplementation<CR>
-nnoremap <Leader>jr YcmCompleter GoToReferences<CR>
+"nnoremap <Leader>ji :tab split \| YcmCompleter GoToImplementation<CR>
+"nnoremap <Leader>jr YcmCompleter GoToReferences<CR>
 "nnoremap <Leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <Leader>jd :tab split \| YcmCompleter GoToDefinition<CR>
+"nnoremap <Leader>jd :tab split \| YcmCompleter GoToDefinition<CR>
 nnoremap <Leader>jf :YcmCompleter FixIt<CR>
+nnoremap <Leader>ji :YcmCompleter GoToImplementation<CR>
+nnoremap <Leader>jr :YcmCompleter GoToReferences<CR>
+nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
+
 
 " Abrir NerdTree
 map <C-n> :NERDTreeToggle<CR>
 
-"cierra NerdTree despues de abrir un arhcivo
-let NERDTreeQuitOnOpen=1
 
 " Abrir terminal
 map <F2> :belowright terminal<CR>
@@ -36,3 +38,12 @@ noremap <C-H> <C-W><C-H>
 noremap <C-e> <C-o>$
 
 "------
+"configuacion git
+cnoreabbrev blame Gblame
+cnoreabbrev diff Gdiff
+
+" git
+nnoremap <Leader>G :G<cr>
+nnoremap <Leader>gp :Gpush<cr>
+nnoremap <Leader>gl :Gpull<cr>
+

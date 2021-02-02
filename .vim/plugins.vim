@@ -40,4 +40,9 @@ Plugin 'morhetz/gruvbox'
 Plugin 'maximbaz/lightline-ale'
 Plugin 'itchyny/lightline.vim'
 Plugin 'shinchu/lightline-gruvbox.vim'
+" git
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'tpope/vim-repeat'
+
 call vundle#end()
